@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Cucumber Results json</title>
+</head>
+<body>
+  <h1>Upload Cucumber Results JSON</h1>
+  <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="post">
+    <input type="file" name="cucumberResults" accept=".json" required />
+    <button type="submit">Generate Report</button>
+  </form>
+
+  <script>
+    document.getElementById("uploadForm").onsubmit = function(event) {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+
+      fetch("/upload", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          window.open("/report", "_blank");
+        } else {
+          alert("Failed to generate report.");
+        }
+      })
+      .catch(error => console.error("Error:", error));
+    };
+  </script>
+</body>
+</html>

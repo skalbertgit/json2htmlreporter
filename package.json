@@ -1,0 +1,17 @@
+{
+  "name": "htmlviewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "satyendra k Sharma: satyendra.er@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cucumber-html-reporter": "^7.2.0",
+    "express": "^4.21.1",
+    "express-fileupload": "^1.5.1"
+  }
+}
