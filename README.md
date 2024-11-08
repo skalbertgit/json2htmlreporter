@@ -18,7 +18,7 @@ This project provides a simple web-based tool for uploading `cucumberResults.jso
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/automated-tests.git
+   git clone repourl
    ```
 
 2. **Navigate into the project directory**:
