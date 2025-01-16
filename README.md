@@ -117,3 +117,8 @@ For reference, your `cucumberResults.json` should follow the standard Cucumber J
 ## License
 
 This project is licensed under the MIT License.
+
+##Sample of the generated reports:
+<img width="1153" alt="image" src="https://github.com/user-attachments/assets/7e084584-0f38-4d0e-aad9-a8b0a90f31b7" />
+
+
